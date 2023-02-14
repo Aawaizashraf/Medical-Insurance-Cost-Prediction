@@ -6,9 +6,9 @@ import json
 
 app=Flask(__name__)
 ## Load the Model
-model=pickle.load(open("./pickle Files\model.pkl",'rb'))
-scaler=pickle.load(open("./pickle Files\scaler.pkl",'rb'))
-ohe=pickle.load(open("./pickle Files\ohe.pkl",'rb'))
+model=pickle.load(open("./pickle Files/model.pkl",'rb'))
+scaler=pickle.load(open("./pickle Files/scaler.pkl",'rb'))
+ohe=pickle.load(open("./pickle Files/ohe.pkl",'rb'))
 
 @app.route('/')
 def home():
